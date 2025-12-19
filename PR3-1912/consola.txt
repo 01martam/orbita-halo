@@ -1,0 +1,209 @@
+1607177@uab.cat@CCBC-pc6-12-L:~$ ls
+Baixades  Desktop  Documents  Imatges  Música  opengnsys.log  Plantilles  Públic  R  Vídeos
+1607177@uab.cat@CCBC-pc6-12-L:~$ cd Desktop
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop$ ls
+ docencia.desktop          PR3-2210            reboot.desktop   RKF78-3.1.c
+ org.kde.konsole.desktop  'Programari Aules'   RKF78-2.2.c      shutdown.desktop
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop$ cd PR3-2210
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ ls
+ Makefile   PR3ex2.exe   PR3ex3.exe   rk45_b.h  'Test-RK45(2).c'   Test-RK45Sys.c
+ PR3ex2.c   PR3ex3.c     rk45_b.c     rk45_b.o   Test-RK45.c
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c
+rk45_b.c: In function ‘rk45’:
+rk45_b.c:60:5: error: invalid operands to binary * (have ‘int’ and ‘double *’)
+   60 |     *h=sign*MIN(hmax,MAX(hmin,fabs(*h)))
+      |     ^
+rk45_b.c:64:5: error: expected ‘,’ or ‘;’ before ‘double’
+   64 |     double *k = malloc(6* n * sizeof(double));
+      |     ^~~~~~
+rk45_b.c:65:9: error: ‘k’ undeclared (first use in this function)
+   65 |     if (k == NULL) {
+      |         ^
+rk45_b.c:65:9: note: each undeclared identifier is reported only once for each function it appears in
+rk45_b.c:129:31: error: expected ‘;’ before ‘err’
+  129 |         err = (fabs(*h) * err)//||x7-x8||_1
+      |                               ^
+      |                               ;
+  130 |         err = err/n;// error mitja
+      |         ~~~                    
+rk45_b.c:156:56: error: expected ‘;’ before ‘}’ token
+  156 |             for (int i=0; i < n; i++){x[i] = extraXk[i]};//X5 nou
+      |                                                        ^
+      |                                                        ;
+rk45_b.c:56:9: warning: unused variable ‘dir’ [-Wunused-variable]
+   56 |     int dir=(*h < 0.0)? -1 : 1;
+      |         ^~~
+rk45_b.c: In function ‘rk45_1step’:
+rk45_b.c:176:5: error: ‘hmin’ undeclared (first use in this function); did you mean ‘fmin’?
+  176 |     hmin=fabs(hmin);
+      |     ^~~~
+      |     fmin
+rk45_b.c:177:5: error: ‘hmax’ undeclared (first use in this function); did you mean ‘fmax’?
+  177 |     hmax=fabs(hmax);
+      |     ^~~~
+      |     fmax
+rk45_b.c:178:9: warning: unused variable ‘dir’ [-Wunused-variable]
+  178 |     int dir=(h < 0.0)? -1 : 1;
+      |         ^~~
+rk45_b.c: At top level:
+rk45_b.c:41:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   41 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+make: *** [Makefile:16: rk45_b.o] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make r
+realclean  rk45_b.o   
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c
+rk45_b.c: In function ‘rk45’:
+rk45_b.c:60:5: error: invalid operands to binary * (have ‘int’ and ‘double *’)
+   60 |     *h=sign*MIN(hmax,MAX(hmin,fabs(*h)));
+      |     ^
+rk45_b.c:129:31: error: expected ‘;’ before ‘err’
+  129 |         err = (fabs(*h) * err)//||x7-x8||_1
+      |                               ^
+      |                               ;
+  130 |         err = err/n;// error mitja
+      |         ~~~                    
+rk45_b.c:156:56: error: expected ‘;’ before ‘}’ token
+  156 |             for (int i=0; i < n; i++){x[i] = extraXk[i]};//X5 nou
+      |                                                        ^
+      |                                                        ;
+rk45_b.c:56:9: warning: unused variable ‘dir’ [-Wunused-variable]
+   56 |     int dir=(*h < 0.0)? -1 : 1;
+      |         ^~~
+rk45_b.c: In function ‘rk45_1step’:
+rk45_b.c:176:9: warning: unused variable ‘dir’ [-Wunused-variable]
+  176 |     int dir=(h < 0.0)? -1 : 1;
+      |         ^~~
+rk45_b.c: At top level:
+rk45_b.c:41:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   41 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+make: *** [Makefile:16: rk45_b.o] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c
+rk45_b.c: In function ‘rk45’:
+rk45_b.c:59:5: error: invalid operands to binary * (have ‘int’ and ‘double *’)
+   59 |     *h=sign*MIN(hmax,MAX(hmin,fabs(*h)));
+      |     ^
+rk45_b.c:128:31: error: expected ‘;’ before ‘err’
+  128 |         err = (fabs(*h) * err)//||x7-x8||_1
+      |                               ^
+      |                               ;
+  129 |         err = err/n;// error mitja
+      |         ~~~                    
+rk45_b.c:155:56: error: expected ‘;’ before ‘}’ token
+  155 |             for (int i=0; i < n; i++){x[i] = extraXk[i]};//X5 nou
+      |                                                        ^
+      |                                                        ;
+rk45_b.c: At top level:
+rk45_b.c:41:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   41 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+make: *** [Makefile:16: rk45_b.o] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c
+rk45_b.c: In function ‘rk45’:
+rk45_b.c:58:33: error: called object is not a function or function pointer
+   58 |     int sign=((*h) < 0.0)? -1 : 1
+      |                                 ^
+rk45_b.c: At top level:
+rk45_b.c:41:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   41 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+make: *** [Makefile:16: rk45_b.o] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c
+rk45_b.c:41:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   41 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+cc   rk45_b.o   -o rk45_b
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: rk45_b.o: in function `rk45':
+/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:145:(.text+0x7e5): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x863): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x8ce): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x934): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x99f): undefined reference to `pow'
+/usr/bin/ld: rk45_b.o:/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:159: more undefined references to `pow' follow
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: rk45_b] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+cc   rk45_b.o   -o rk45_b
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: rk45_b.o: in function `rk45':
+/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:145:(.text+0x7e5): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x863): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x8ce): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x934): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x99f): undefined reference to `pow'
+/usr/bin/ld: rk45_b.o:/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:159: more undefined references to `pow' follow
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: rk45_b] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+cc   rk45_b.o   -o rk45_b
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: rk45_b.o: in function `rk45':
+/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:145:(.text+0x7e5): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x863): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x8ce): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x934): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x99f): undefined reference to `pow'
+/usr/bin/ld: rk45_b.o:/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:159: more undefined references to `pow' follow
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: rk45_b] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b
+cc   rk45_b.o   -o rk45_b
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x1b): undefined reference to `main'
+/usr/bin/ld: rk45_b.o: in function `rk45':
+/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:145:(.text+0x7e5): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x863): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x8ce): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x934): undefined reference to `pow'
+/usr/bin/ld: /home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:146:(.text+0x99f): undefined reference to `pow'
+/usr/bin/ld: rk45_b.o:/home/UAB/1607177/Desktop/PR3-2210/rk45_b.c:159: more undefined references to `pow' follow
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: rk45_b] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make rk45_b.o
+make: 'rk45_b.o' is up to date.
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make p
+make: *** No rule to make target 'p'.  Stop.
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+PR3ex2.c: In function ‘main’:
+PR3ex2.c:65:46: error: ‘status’ undeclared (first use in this function)
+   65 |       fprintf(stderr, "Error en rk45: %d \n",status);
+      |                                              ^~~~~~
+PR3ex2.c:65:46: note: each undeclared identifier is reported only once for each function it appears in
+PR3ex2.c:53:7: warning: unused variable ‘sign’ [-Wunused-variable]
+   53 |   int sign=(h < 0.0)? -1 : 1;
+      |       ^~~~
+make: *** [Makefile:19: PR3ex2] Error 1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+PR3ex2.c: In function ‘main’:
+PR3ex2.c:52:3: warning: ‘n’ may be used uninitialized [-Wmaybe-uninitialized]
+   52 |   double x[n],x_exac[n];
+      |   ^~~~~~
+PR3ex2.c:45:7: note: ‘n’ was declared here
+   45 |   int n;
+      |       ^
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ .\PR3ex2 0 2*3.1316 1. 1. 1e-2 1e-5 1e-1
+.PR3ex2: no s'ha trobat l'ordre
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ ./PR3ex2 0 2*3.1316 1. 1. 1e-2 1e-5 1e-1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ gnuplot
+No s'ha trobat l'ordre 'gnuplot', però pot ser instal·lada amb:
+apt install gnuplot-nox  # version 5.4.4+dfsg1-2build1, or
+apt install gnuplot-qt   # version 5.4.4+dfsg1-2build1
+apt install gnuplot-x11  # version 5.4.4+dfsg1-2build1
+Demaneu al vostre administrador que us n'instal·li un.
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ ./PR3ex2 0 6 1. 1. 1e-2 1e-5 1e-1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ ./PR3ex2 0 6 1. 1. 1e-2 1e-5 1e-1
+1607177@uab.cat@CCBC-pc6-12-L:~/Desktop/PR3-2210$ 

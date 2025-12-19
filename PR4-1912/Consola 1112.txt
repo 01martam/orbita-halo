@@ -1,0 +1,233 @@
+1607177@uab.cat@CCBC-pc1d-01-L:~$ cd Desktop/PR4-1112/
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ ls
+flux_b.c  flux_b.o  PR4ex1    PR4ex2    PR4ex3.c   Resultats.txt  rk45_b.c  rk45_b.o
+flux_b.h  Makefile  PR4ex1.c  PR4ex2.c  Proba.txt  Resu.txt       rk45_b.h
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+flux_b.c: In function ‘dernum’:
+flux_b.c:138:16: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  138 |   double *xp = malloc(n * sizeof(double));
+      |                ^~~~~~
+flux_b.c:4:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+    3 | #include "rk45_b.h"
+  +++ |+#include <stdlib.h>
+    4 | 
+flux_b.c:138:16: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+  138 |   double *xp = malloc(n * sizeof(double));
+      |                ^~~~~~
+flux_b.c:138:16: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+flux_b.c:162:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  162 |     if(flux(&t, xp, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:98:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   98 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:170:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  170 |     if(flux(&t, xm, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:98:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   98 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c: In function ‘dervar’:
+flux_b.c:201:63: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  201 |   int r = flux(&t, x, &h, T, hmin, hmax,tol, npasmax, ntotal, camp, prm,0);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               double (*)(int,  double,  double *, double *, double *)
+flux_b.c:98:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   98 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:133:16: error: ‘Dphi’ undeclared (first use in this function)
+  133 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:207:7: note: in expansion of macro ‘K’
+  207 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c:133:16: note: each undeclared identifier is reported only once for each function it appears in
+  133 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:207:7: note: in expansion of macro ‘K’
+  207 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c: In function ‘flux2’:
+flux_b.c:94:1: warning: control reaches end of non-void function [-Wreturn-type]
+   94 | }
+      | ^
+make: *** [Makefile:19: flux_b.o] Error 1
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+flux_b.c: In function ‘dernum’:
+flux_b.c:163:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  163 |     if(flux(&t, xp, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:171:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  171 |     if(flux(&t, xm, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c: In function ‘dervar’:
+flux_b.c:202:63: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  202 |   int r = flux(&t, x, &h, T, hmin, hmax,tol, npasmax, ntotal, camp, prm,0);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:134:16: error: ‘Dphi’ undeclared (first use in this function)
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c:134:16: note: each undeclared identifier is reported only once for each function it appears in
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c: In function ‘flux2’:
+flux_b.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+make: *** [Makefile:19: flux_b.o] Error 1
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+flux_b.c: In function ‘dernum’:
+flux_b.c:163:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  163 |     if(flux(&t, xp, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:171:60: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  171 |     if(flux(&t, xm, &haux, T, hmin, hmax, tol, npasmax, n, camp, prm,0)<0){
+      |                                                            ^~~~
+      |                                                            |
+      |                                                            double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c: In function ‘dervar’:
+flux_b.c:202:63: warning: passing argument 10 of ‘flux’ from incompatible pointer type [-Wincompatible-pointer-types]
+  202 |   int r = flux(&t, x, &h, T, hmin, hmax,tol, npasmax, ntotal, camp, prm,0);
+      |                                                               ^~~~
+      |                                                               |
+      |                                                               double (*)(int,  double,  double *, double *, double *)
+flux_b.c:99:17: note: expected ‘int (*)(int,  double,  double *, double *, double *)’ but argument is of type ‘double (*)(int,  double,  double *, double *, double *)’
+   99 |           int (*camp)(int n, double t, double *x, double *f, double *prm),
+      |           ~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+flux_b.c:134:16: error: ‘Dphi’ undeclared (first use in this function)
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c:134:16: note: each undeclared identifier is reported only once for each function it appears in
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c: In function ‘flux2’:
+flux_b.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+make: *** [Makefile:19: flux_b.o] Error 1
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+flux_b.c: In function ‘dervar’:
+flux_b.c:134:16: error: ‘Dphi’ undeclared (first use in this function)
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c:134:16: note: each undeclared identifier is reported only once for each function it appears in
+  134 | #define K(i,j) Dphi[(j)*n+(i)]
+      |                ^~~~
+flux_b.c:208:7: note: in expansion of macro ‘K’
+  208 |       K(i,j)=A(i,j);
+      |       ^
+flux_b.c: In function ‘flux2’:
+flux_b.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+make: *** [Makefile:19: flux_b.o] Error 1
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+flux_b.c: In function ‘flux2’:
+flux_b.c:95:1: warning: control reaches end of non-void function [-Wreturn-type]
+   95 | }
+      | ^
+gcc: warning: rk45_b.o: linker input file unused because linking not done
+gcc -o PR4ex1 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex1.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex2.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex3.c flux_b.o rk45_b.o  -lm
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c rk45_b.o -lm
+gcc: warning: rk45_b.o: linker input file unused because linking not done
+gcc -o PR4ex1 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex1.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex2.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex3.c flux_b.o rk45_b.o  -lm
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+make: Nothing to be done for 'all'.
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+make: Nothing to be done for 'all'.
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make realclean
+rm -f *.o
+rm -f PR4ex1 PR4ex2 PR4ex3 
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation flux_b.c -lm
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c -lm
+rk45_b.c:45:23: warning: ‘b’ defined but not used [-Wunused-variable]
+   45 |         static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+      |                       ^
+gcc -o PR4ex1 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex1.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex2.c flux_b.o rk45_b.o -lm
+gcc -o PR4ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR4ex3.c flux_b.o rk45_b.o  -lm
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ ./PR4ex2
+./PR4ex2 T t0 x0 y0 z0 h hmin hmax n tol npasmax
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ ./PR4ex3
+phi_T(x0) = (0.342816389532071, 0.584588608189054)
+0.342816389532071        0.584588608189054       0.928853056592416       0.401851848697289       -0.611865382422659    0.926743888282517       
+
+Dphi(T) per variacionals:
+[ 9.288530565924158e-01   -6.118653824226590e-01 ]
+[ 4.018518486972890e-01   9.267438882825165e-01 ]
+
+Dphi(T) per diferencies finites(ordre 1):
+[ 9.288530564699471e-01   -6.118653824160880e-01 ]
+[ 4.018518486859080e-01   9.267438884075219e-01 ]
+
+Diferencia (variacional - numerica):
+[ 1.225e-10   -6.571e-12 ]
+[ 1.138e-11   -1.250e-10 ]
+1607177@uab.cat@CCBC-pc1d-01-L:~/Desktop/PR4-1112$ 

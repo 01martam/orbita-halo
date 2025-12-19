@@ -1,0 +1,77 @@
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ ./opham_pendol 1e-10 1000000 0 1 0
+Energia h = -0.877583
+Aproximacio inicial: T = 6.283185, x = (0.500000, 0.000000)
+it 0 norm_f 0.0477428 norm_y 0.099377
+it 1 norm_f 0.000255339 norm_y 0.000329333
+it 2 norm_f 2.83814e-08 norm_y 6.11903e-08
+it 3 norm_f 5.6614e-14 norm_y 6.00572e-15
+Newton convergeix despres de 4 iteracions
+Periode T = 6.382789697677752
+Condició inicial: q = 0.500000000000003, p = 0.000000000000000
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ ./opham_pendol 1e-10 1000000 0 1 0
+Energia h = -0.877583
+Aproximacio inicial: T = 6.283185, x = (0.500000, 0.000000)
+Violació de segment (s'ha bolcat la memòria)
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_b.c
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ ./opham_pendol 1e-10 1000000 0 1 0
+Energia h = -0.877583
+Aproximacio inicial: T = 6.283185, x = (0.500000, 0.000000)
+it 0 norm_f 0.0477428 norm_y 0.099377
+it 1 norm_f 0.000255339 norm_y 0.000329333
+it 2 norm_f 2.83814e-08 norm_y 6.11903e-08
+it 3 norm_f 5.6614e-14 norm_y 6.00572e-15
+Newton convergeix despres de 3 iteracions
+Periode T = 6.382789697677752
+Condició inicial: q = 0.500000000000003, p = 0.000000000000000
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_b.c
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+opham_pendol.c: In function ‘main’:
+opham_pendol.c:55:16: warning: too many arguments for format [-Wformat-extra-args]
+   55 |         printf("T0-Tfin\n", fabs(2 * M_PI-xx[0]));
+      |                ^~~~~~~~~~~
+opham_pendol.c:56:16: warning: too many arguments for format [-Wformat-extra-args]
+   56 |         printf("q0-qfin\n", fabs(0.5-xx[1]));
+      |                ^~~~~~~~~~~
+opham_pendol.c:57:16: warning: too many arguments for format [-Wformat-extra-args]
+   57 |         printf("p0-pfin\n", fabs(0.0-xx[2]));
+      |                ^~~~~~~~~~~
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ ./opham_pendol 1e-10 1000000 0 1 0
+Energia h = -0.877583
+Aproximacio inicial: T = 6.283185, x = (0.500000, 0.000000)
+it 0 norm_f 0.0477428 norm_y 0.099377
+it 1 norm_f 0.000255339 norm_y 0.000329333
+it 2 norm_f 2.83814e-08 norm_y 6.11903e-08
+it 4 norm_f 5.6614e-14 
+Newton convergeix despres de 4 iteracions
+Periode T = 6.382789697677752
+Condició inicial: q = 0.500000000000003, p = 0.000000000000000
+T0-Tfin=9.960439e-02
+q0-qfin=3.108624e-15
+p0-pfin=3.856455e-22
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ make opham_pendol 
+gcc -o opham_pendol -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ ./opham_pendol 1e-10 1000000 0 1 0
+Energia h = -0.877583
+Aproximacio inicial: T = 6.283185, x = (0.500000, 0.000000)
+it 0 norm_f 0.0477428 norm_y 0.099377
+it 1 norm_f 0.000255339 norm_y 0.000329333
+it 2 norm_f 2.83814e-08 norm_y 6.11903e-08
+it 4 norm_f 5.6614e-14 
+Newton convergeix despres de 4 iteracions
+Periode T = 6.382789697677752
+Condició inicial: q = 0.500000000000003, p = 0.000000000000000
+T0-Tfin=9.960439e-02
+q0-qfin=3.108624e-15
+p0-pfin=3.856455e-22
+H(x)-h=1.554312e-15
+g(x)=3.856455e-22
+1607177@uab.cat@CCBC-pc1a-13-L:~/Desktop/PR5-1712$ 

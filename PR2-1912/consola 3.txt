@@ -1,0 +1,447 @@
+1607177@uab.cat@CCBC-pc1d-10-L:~$ ls
+Baixades  Desktop  Documents  Imatges  Música  opengnsys.log  Plantilles  Públic  R  Vídeos
+1607177@uab.cat@CCBC-pc1d-10-L:~$ cd Desktop/PR2-0912
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ls
+ -c               g2.txt     Newton_b.c   PR2ex2.c     QRsolve_b.c      TestFunction.h
+'Consola 2.txt'   g3.txt     Newton_b.h   PR2ex2.exe   QRsolve_b.h      TestFunction.o
+ consola.txt      kk         Newton_b.o   PR2ex2.o     QRsolve_b.o
+ g1.txt           Makefile   plot         PR2ex3.c     TestFunction.c
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+/usr/bin/ld: warning: Newton_b.o: missing .note.GNU-stack section implies executable stack
+/usr/bin/ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+/usr/bin/ld: QRsolve_b.o: in function `QRsolve':
+C:\Users\m3333\Desktop\C archivos\C�lcul n�meric\Practica 02\PR2-0612/QRsolve_b.c:48:(.text+0xbc): undefined reference to `__imp___acrt_iob_func'
+/usr/bin/ld: Newton_b.o:Newton_b.c:(.text+0x92): undefined reference to `__imp___acrt_iob_func'
+/usr/bin/ld: Newton_b.o:Newton_b.c:(.text+0x127): undefined reference to `__imp___acrt_iob_func'
+/usr/bin/ld: Newton_b.o:Newton_b.c:(.text+0x299): undefined reference to `__imp___acrt_iob_func'
+/usr/bin/ld: Newton_b.o:Newton_b.c:(.text+0x367): undefined reference to `__imp___acrt_iob_func'
+/usr/bin/ld: Newton_b.o:Newton_b.c:(.text+0x44f): more undefined references to `__imp___acrt_iob_func' follow
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x0): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x4): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x8): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0xc): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x10): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x14): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x18): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x1c): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x20): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x24): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x28): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x2c): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x30): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x34): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+QRsolve_b.o:QRsolve_b.c:(.pdata+0x38): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0x0): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0x4): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0x8): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0xc): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0x10): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+Newton_b.o:Newton_b.c:(.pdata+0x14): dangerous relocation: R_AMD64_IMAGEBASE with __ImageBase undefined
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:25: PR2ex2] Error 1
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.h
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+PR2ex3.c: In function ‘main’:
+PR2ex3.c:75:9: error: too few arguments to function ‘newton’
+   75 |         newton(2,2,z,funcio_fractal,maxit,tol);
+      |         ^~~~~~
+In file included from PR2ex3.c:5:
+Newton_b.h:2:5: note: declared here
+    2 | int newton(int m, int n, double *x, int (*fdf)(int m,int n,double *x,double *f,double *df),int maxit, double tol,int passos);
+      |     ^~~~~~
+PR2ex3.c:77:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   77 |         double d1=dist(z,arrel1);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+PR2ex3.c:78:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   78 |         double d2=dist(z,arrel2);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+PR2ex3.c:79:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   79 |         double d3=dist(z,arrel3);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+make: *** [Makefile:29: PR2ex3] Error 1
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+PR2ex3.c: In function ‘main’:
+PR2ex3.c:77:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   77 |         double d1=dist(z,arrel1);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+PR2ex3.c:78:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   78 |         double d2=dist(z,arrel2);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+PR2ex3.c:79:26: warning: passing argument 2 of ‘dist’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   79 |         double d3=dist(z,arrel3);
+      |                          ^~~~~~
+PR2ex3.c:14:32: note: expected ‘double *’ but argument is of type ‘const double *’
+   14 | double dist(double *x, double *r)
+      |                        ~~~~~~~~^
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make PR2ex3
+make: 'PR2ex3' is up to date.
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2
+Introdueix: ./PR2ex2 tol maxit passos x0[0] ... x0[2]
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 20 1 0 0 1
+it 0 norm_f 0.540302 norm_y 0.642093
+it 1 norm_f 0.0712359 norm_y 0.0714173
+it 2 norm_f 0.00012105 norm_y 0.00012105
+it 3 norm_f 5.91244e-13 norm_y 5.91244e-13
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -5.91244e-13 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 20 2 0 0 1
+Iteracio 0
+x_{0}=|0 0 1 |
+f(x_{0})=|0 0 0.540302 |
+Df(x_{0})=|-1 -1 0 |
+|-0 -1 0 |
+|0 0 -0.841471 |
+y_{0}=|-0 -0 -0.642093 |
+Iteracio 1
+x_{1}=|0 0 1.64209 |
+f(x_{1})=|0 0 -0.0712359 |
+Df(x_{1})=|-1 -1.64209 0 |
+|-0 -1 0 |
+|0 0 -0.997459 |
+y_{1}=|-0 -0 0.0714173 |
+Iteracio 2
+x_{2}=|0 0 1.57068 |
+f(x_{2})=|0 0 0.00012105 |
+Df(x_{2})=|-1 -1.57068 0 |
+|-0 -1 0 |
+|0 0 -1 |
+y_{2}=|-0 -0 -0.00012105 |
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -5.91244e-13 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.h
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+PR2ex2.c: In function ‘main’:
+PR2ex2.c:20:30: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘double *’ [-Wformat=]
+   20 |           ||sscanf(argv[2],"%d",&maxit)!=1|| maxit <= 0
+      |                             ~^  ~~~~~~
+      |                              |  |
+      |                              |  double *
+      |                              int *
+      |                             %le
+PR2ex2.c:22:30: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘double *’ [-Wformat=]
+   22 |           ||sscanf(argv[4],"%d",&x[0])!=1
+      |                             ~^  ~~~~~
+      |                              |  |
+      |                              |  double *
+      |                              int *
+      |                             %le
+PR2ex2.c:23:30: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘double *’ [-Wformat=]
+   23 |           ||sscanf(argv[5],"%d",&x[1])!=1
+      |                             ~^  ~~~~~
+      |                              |  |
+      |                              |  double *
+      |                              int *
+      |                             %le
+PR2ex2.c:24:30: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘double *’ [-Wformat=]
+   24 |           ||sscanf(argv[6],"%d",&x[2])!=1){
+      |                             ~^  ~~~~~
+      |                              |  |
+      |                              |  double *
+      |                              int *
+      |                             %le
+PR2ex2.c:10:17: warning: unused variable ‘i’ [-Wunused-variable]
+   10 |     int m=3,n=3,i,passos;
+      |                 ^
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+PR2ex2.c: In function ‘main’:
+PR2ex2.c:20:30: warning: format ‘%d’ expects argument of type ‘int *’, but argument 3 has type ‘double *’ [-Wformat=]
+   20 |           ||sscanf(argv[2],"%d",&maxit)!=1|| maxit <= 0
+      |                             ~^  ~~~~~~
+      |                              |  |
+      |                              |  double *
+      |                              int *
+      |                             %le
+PR2ex2.c:10:17: warning: unused variable ‘i’ [-Wunused-variable]
+   10 |     int m=3,n=3,i,passos;
+      |                 ^
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+PR2ex2.c: In function ‘main’:
+PR2ex2.c:10:17: warning: unused variable ‘i’ [-Wunused-variable]
+   10 |     int m=3,n=3,i,passos,maxit;
+      |                 ^
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 20 2 0 0 1
+Iteracio 0
+x_{0}=|0 0 1 |
+f(x_{0})=|0 0 0.540302 |
+Df(x_{0})=|-1 -1 0 |
+|-0 -1 0 |
+|0 0 -0.841471 |
+y_{0}=|-0 -0 -0.642093 |
+Iteracio 1
+x_{1}=|0 0 1.64209 |
+f(x_{1})=|0 0 -0.0712359 |
+Df(x_{1})=|-1 -1.64209 0 |
+|-0 -1 0 |
+|0 0 -0.997459 |
+y_{1}=|-0 -0 0.0714173 |
+Iteracio 2
+x_{2}=|0 0 1.57068 |
+f(x_{2})=|0 0 0.00012105 |
+Df(x_{2})=|-1 -1.57068 0 |
+|-0 -1 0 |
+|0 0 -1 |
+y_{2}=|-0 -0 -0.00012105 |
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -5.91244e-13 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 20 1 0 0 1
+it 0 norm_f 0.540302 norm_y 0.642093
+it 1 norm_f 0.0712359 norm_y 0.0714173
+it 2 norm_f 0.00012105 norm_y 0.00012105
+it 3 norm_f 5.91244e-13 norm_y 5.91244e-13
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -5.91244e-13 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.h
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 20 1 0 0 1
+it 0 norm_f 0.540302 norm_y 0.642093
+it 1 norm_f 0.0712359 norm_y 0.0714173
+it 2 norm_f 0.00012105 norm_y 0.00012105
+it 3 norm_f 5.91244e-13 norm_y 0.00012105
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -5.91244e-13 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.h
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+make: Nothing to be done for 'all'.
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+make: Nothing to be done for 'all'.
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.h
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make realclean
+rm -f *.o
+rm -f PR2ex2 PR2ex3 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation TestFunction.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+make: Nothing to be done for 'all'.
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2
+./PR2ex2 tol maxit passos x0[0] x0[1] x0[2] 
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-12 1000 0 0 0 2
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 6.12323e-17 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-12 1000 1 0 0 2
+it 0 norm_f 0.416147 norm_y 0.457658
+it 1 norm_f 0.02845 norm_y 0.0284616
+it 2 norm_f 7.68146e-06 norm_y 7.68146e-06
+it 3 norm_f 6.12323e-17 norm_y 7.68146e-06
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 6.12323e-17 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-12 1000 1 0 0 2
+it 0 norm_f 0.416147 norm_y 0.457658
+it 1 norm_f 0.02845 norm_y 0.0284616
+it 2 norm_f 7.68146e-06 norm_y 7.68146e-06
+it 3 norm_f 6.12323e-17 norm_y 6.12323e-17
+Newton convergeix despres de 3 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 6.12323e-17 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 1000 1 0 0 2
+it 0 norm_f 0.416147 norm_y 0.457658
+it 1 norm_f 0.02845 norm_y 0.0284616
+it 2 norm_f 7.68146e-06 norm_y 7.68146e-06
+Newton convergeix despres de 2 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -7.68146e-06 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ^C
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 1000 1 0 0 2
+it 0 norm_f 0.416147 norm_y 0.457658
+it 1 norm_f 0.02845 norm_y 0.0284616
+it 2 norm_f 7.68146e-06 norm_y 7.68146e-06
+Newton convergeix despres de 2 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -7.68146e-06 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 1000 2 0 0 2
+Iteracio 0
+x_{0}=|0 0 2 |
+f(x_{0})=|0 0 -0.416147 |
+Df(x_{0})=|-1 -2 0 |
+|-0 -1 0 |
+|0 0 -0.909297 |
+y_{0}=|-0 -0 0.457658 |
+Iteracio 1
+x_{1}=|0 0 1.54234 |
+f(x_{1})=|0 0 0.02845 |
+Df(x_{1})=|-1 -1.54234 0 |
+|-0 -1 0 |
+|0 0 -0.999595 |
+y_{1}=|-0 -0 -0.0284616 |
+Newton convergeix despres de 2 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -7.68146e-06 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+gcc -o PR2ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 1000 2 0 0 2
+Iteracio 0
+x_{0}=|0 0 2 |
+f(x_{0})=|0 0 -0.416147 |
+Df(x_{0})=|-1 -2 0 |
+|-0 -1 0 |
+|0 0 -0.909297 |
+y_{0}=|-0 -0 0.457658 |
+Iteracio 1
+x_{1}=|0 0 1.54234 |
+f(x_{1})=|0 0 0.02845 |
+Df(x_{1})=|-1 -1.54234 0 |
+|-0 -1 0 |
+|0 0 -0.999595 |
+y_{1}=|-0 -0 -0.0284616 |
+Newton convergeix despres de 2 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -7.68146e-06 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 1000 1 0 0 2
+it 0 norm_f 0.416147 norm_y 0.457658
+it 1 norm_f 0.02845 norm_y 0.0284616
+it 2 norm_f 7.68146e-06 norm_y 0.0284616
+Newton convergeix despres de 2 iteracions
+Solucio trobada:
+ x=|0 0 1.5708 |
+La solucio analitica real es |0 0 pi/2+pi*k| on pi/2 es aproximadament 1,57079 i k qualsevol enter
+F(x)=|0 0 -7.68146e-06 |
+DF=|1 1.5708 0 |
+|-0 1 0 |
+|0 0 -1 |
+1607177@uab.cat@CCBC-pc1d-10-L:~/Desktop/PR2-0912$ ./PR2ex2 1e-5 100

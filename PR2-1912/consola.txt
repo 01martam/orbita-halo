@@ -1,0 +1,955 @@
+Microsoft Windows [Versión 10.0.19045.6093]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\m3333> cd Desktop\C archivos\Càlcul númeric
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric
+
+24/09/2025  22:22    <DIR>          .
+24/09/2025  22:22    <DIR>          ..
+22/09/2025  12:34            86.991 ajuda.pdf
+22/09/2025  12:03               528 Codi Pèndol-20250922.zip
+22/09/2025  12:03             1.337 Codi RTBP-20250922.zip
+22/09/2025  12:36           715.971 guio_prac.pdf
+22/09/2025  12:00           283.041 guio_prac_intro.pdf
+26/09/2025  19:35    <DIR>          Practica 01
+26/09/2025  19:18    <DIR>          Practica 02
+23/09/2025  18:16    <DIR>          Practica 03
+23/09/2025  18:16    <DIR>          Practica 04
+               5 archivos      1.087.868 bytes
+               6 dirs  49.938.898.944 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric>cd Practica 02
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02
+
+26/09/2025  19:18    <DIR>          .
+26/09/2025  19:18    <DIR>          ..
+22/09/2025  12:01               703 Codis Pràctica 2 - Newton-20250922.zip
+22/09/2025  12:01           172.149 guio_prac2.pdf
+25/09/2025  00:08    <DIR>          PR2-2409
+26/09/2025  22:40    <DIR>          PR2-2609
+               2 archivos        172.852 bytes
+               4 dirs  49.938.898.944 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02>cd PR2-2609
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609
+
+26/09/2025  22:40    <DIR>          .
+26/09/2025  22:40    <DIR>          ..
+25/09/2025  00:06               628 Makefile
+26/09/2025  22:40             2.666 Newton.c
+26/09/2025  22:40             2.560 Newton.o
+26/09/2025  21:36             8.031 QRsolve_b.c
+26/09/2025  21:36               430 QRsolve_b.h
+24/09/2025  23:00             5.602 QRsolve_b.o
+15/07/2025  16:00               641 TestFunction.c
+15/07/2025  16:00                63 TestFunction.h
+               8 archivos         20.621 bytes
+               2 dirs  49.938.440.192 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: 'Newton.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+mingw32-make: *** No rule to make target 'Newton_b.c', needed by 'Newton_b.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: *** No rule to make target 'Newton.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o -lm
+C:\Users\m3333\AppData\Local\Temp\ccSe2RIW.o: In function `main':
+C:\Users\m3333\Desktop\C archivos\CÓlcul n·meric\Practica 02\PR2-2609/PR2ex2.c:50: undefined reference to `function1'
+C:\Users\m3333\AppData\Local\Temp\ccSe2RIW.o:PR2ex2.c:(.rdata$.refptr.function1[.refptr.function1]+0x0): undefined reference to `function1'
+Newton_b.o:Newton.c:(.text+0x289): undefined reference to `QRsolve'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make: *** [Makefile:25: PR2ex2] Error 1
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton.o
+mingw32-make: *** No rule to make target 'Newton.o'.  Stop.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-3 10 0.5 0.5 0.5
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.414    0.354   -0.354 |
+|  -0.414    1.061    0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 0:
+b^(1)=|  -0.354 |
+|   0.707 |
+|   0.878 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.414    0.354   -0.354 |
+|  -0.414   -1.061   -0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 1:
+b^(2)=|  -0.354 |
+|  -0.707 |
+|   0.878 |
+tau=|   1.707    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.453   -2.330    0.535 |
+|   0.430   -1.002    0.563 |
+|   0.000    0.000   -0.725 |
+vector b despres del pas 0:
+b^(1)=|   2.374 |
+|   0.969 |
+|  -0.689 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.453   -2.330    0.535 |
+|   0.430    1.002   -0.563 |
+|   0.000   -0.000   -0.725 |
+vector b despres del pas 1:
+b^(2)=|   2.374 |
+|  -0.969 |
+|  -0.689 |
+tau=|   1.688    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.008   -1.246    0.341 |
+|  -0.062    1.164   -0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 0:
+b^(1)=|   0.365 |
+|  -0.396 |
+|   0.189 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.008   -1.246    0.341 |
+|  -0.062   -1.164    0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 1:
+b^(2)=|   0.365 |
+|   0.396 |
+|   0.189 |
+tau=|   1.992    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.007   -1.440   -0.004 |
+|  -0.061    1.183    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.066 |
+|   0.008 |
+|  -0.002 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.007   -1.440   -0.004 |
+|  -0.061   -1.183   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.066 |
+|  -0.008 |
+|  -0.002 |
+tau=|   1.993    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.000   -1.561    0.003 |
+|  -0.005    1.015   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.000 |
+|  -0.003 |
+|   0.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.000   -1.561    0.003 |
+|  -0.005   -1.015    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.000 |
+|   0.003 |
+|   0.000 |
+tau=|   2.000    2.000 |
+Newton convergeix despres de 5 iteracionsSolucio trobada:
+ x=[0.000037386295297,-0.000023800846532,1.570796326794897,]
+F(x)=[0.000000000012990,-0.000023802244267,0.000000000000000,]
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-3 10 0.5 0.5 0.5
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.414    0.354   -0.354 |
+|  -0.414    1.061    0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 0:
+b^(1)=|  -0.354 |
+|   0.707 |
+|   0.878 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.414    0.354   -0.354 |
+|  -0.414   -1.061   -0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 1:
+b^(2)=|  -0.354 |
+|  -0.707 |
+|   0.878 |
+tau=|   1.707    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.453   -2.330    0.535 |
+|   0.430   -1.002    0.563 |
+|   0.000    0.000   -0.725 |
+vector b despres del pas 0:
+b^(1)=|   2.374 |
+|   0.969 |
+|  -0.689 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.453   -2.330    0.535 |
+|   0.430    1.002   -0.563 |
+|   0.000   -0.000   -0.725 |
+vector b despres del pas 1:
+b^(2)=|   2.374 |
+|  -0.969 |
+|  -0.689 |
+tau=|   1.688    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.008   -1.246    0.341 |
+|  -0.062    1.164   -0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 0:
+b^(1)=|   0.365 |
+|  -0.396 |
+|   0.189 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.008   -1.246    0.341 |
+|  -0.062   -1.164    0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 1:
+b^(2)=|   0.365 |
+|   0.396 |
+|   0.189 |
+tau=|   1.992    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.007   -1.440   -0.004 |
+|  -0.061    1.183    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.066 |
+|   0.008 |
+|  -0.002 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.007   -1.440   -0.004 |
+|  -0.061   -1.183   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.066 |
+|  -0.008 |
+|  -0.002 |
+tau=|   1.993    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.000   -1.561    0.003 |
+|  -0.005    1.015   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.000 |
+|  -0.003 |
+|   0.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.000   -1.561    0.003 |
+|  -0.005   -1.015    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.000 |
+|   0.003 |
+|   0.000 |
+tau=|   2.000    2.000 |
+Newton convergeix despres de 5 iteracions
+Solucio trobada:
+ x=[0.000037386295297,-0.000023800846532,1.570796326794897,]
+F(x)=[0.000000000012990,-0.000023802244267,0.000000000000000,]
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-12 10 0.5 0.5 0.5
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.414    0.354   -0.354 |
+|  -0.414    1.061    0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 0:
+b^(1)=|  -0.354 |
+|   0.707 |
+|   0.878 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.414    0.354   -0.354 |
+|  -0.414   -1.061   -0.354 |
+|   0.000    0.000   -0.479 |
+vector b despres del pas 1:
+b^(2)=|  -0.354 |
+|  -0.707 |
+|   0.878 |
+tau=|   1.707    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.453   -2.330    0.535 |
+|   0.430   -1.002    0.563 |
+|   0.000    0.000   -0.725 |
+vector b despres del pas 0:
+b^(1)=|   2.374 |
+|   0.969 |
+|  -0.689 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.453   -2.330    0.535 |
+|   0.430    1.002   -0.563 |
+|   0.000   -0.000   -0.725 |
+vector b despres del pas 1:
+b^(2)=|   2.374 |
+|  -0.969 |
+|  -0.689 |
+tau=|   1.688    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.008   -1.246    0.341 |
+|  -0.062    1.164   -0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 0:
+b^(1)=|   0.365 |
+|  -0.396 |
+|   0.189 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.008   -1.246    0.341 |
+|  -0.062   -1.164    0.043 |
+|   0.000    0.000   -0.982 |
+vector b despres del pas 1:
+b^(2)=|   0.365 |
+|   0.396 |
+|   0.189 |
+tau=|   1.992    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.007   -1.440   -0.004 |
+|  -0.061    1.183    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.066 |
+|   0.008 |
+|  -0.002 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.007   -1.440   -0.004 |
+|  -0.061   -1.183   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.066 |
+|  -0.008 |
+|  -0.002 |
+tau=|   1.993    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.000   -1.561    0.003 |
+|  -0.005    1.015   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.000 |
+|  -0.003 |
+|   0.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.000   -1.561    0.003 |
+|  -0.005   -1.015    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.000 |
+|   0.003 |
+|   0.000 |
+tau=|   2.000    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.000   -1.571    0.000 |
+|  -0.000    1.000   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.000 |
+|  -0.000 |
+|   0.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.000   -1.571    0.000 |
+|  -0.000   -1.000    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.000 |
+|   0.000 |
+|   0.000 |
+tau=|   2.000    2.000 |
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|  -1.000   -1.571    0.000 |
+|  -0.000    1.000   -0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 0:
+b^(1)=|  -0.000 |
+|  -0.000 |
+|   0.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|  -1.000   -1.571    0.000 |
+|  -0.000   -1.000    0.000 |
+|   0.000    0.000   -1.000 |
+vector b despres del pas 1:
+b^(2)=|  -0.000 |
+|   0.000 |
+|   0.000 |
+tau=|   2.000    2.000 |
+Newton convergeix despres de 7 iteracions
+Solucio trobada:
+ x=[0.000000000000000,-0.000000000000000,1.570796326794897,]
+F(x)=[-0.000000000000000,-0.000000000000000,0.000000000000000,]
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make realclean
+cmd /C del /Q *.o
+cmd /C del /Q PR2ex2.exe PR2ex3.exe
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -o -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -o -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+Newton_b.o: Newton_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h \
+ QRsolve_b.h
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+Newton_b.o: Newton_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h \
+ QRsolve_b.h
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c  -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+mingw32-make: 'Newton_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+PR2ex2.c: In function 'main':
+PR2ex2.c:45:9: warning: implicit declaration of function 'imprimir_matriu' [-Wimplicit-function-declaration]
+         imprimir_matriu(1,n,x);
+         ^~~~~~~~~~~~~~~
+PR2ex2.c:53:9: warning: implicit declaration of function 'QRsolve' [-Wimplicit-function-declaration]
+         QRsolve(m,n,df,f,tau,x,1e-12,0);
+         ^~~~~~~
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-3 10 0.5 0.5 0.5
+Newton convergeix despres de 5 iteracions
+Solucio trobada:
+ x=|   0.000   -0.000    1.571 |
+F(x)=|   0.000   -0.000    0.000 |
+DF=|   1.000    1.571   -0.000 |
+|  -0.000    1.000    0.000 |
+|   0.000    0.000   -1.000 |
+|   0.000   -0.000   -0.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-3 10 0.5 0.5 0.5
+Newton convergeix despres de 5 iteracions
+Solucio trobada:
+ x=|   0.000   -0.000    1.571 |
+F(x)=|   0.000   -0.000    0.000 |
+DF=|   1.000    1.571   -0.000 |
+|  -0.000    1.000    0.000 |
+|   0.000    0.000   -1.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+gcc -c  -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation Newton_b.c QRsolve_b.o
+gcc: warning: QRsolve_b.o: linker input file unused because linking not done
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+mingw32-make: 'Newton_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-3 10 0.5 0.5 0.5
+Newton convergeix despres de 5 iteracions
+Solucio trobada:
+ x=|3.73863e-005 -2.38008e-005 1.5708 |
+F(x)=|1.29901e-011 -2.38022e-005 6.12303e-017 |
+DF=|1 1.5708 -2.38008e-005 |
+|-7.47726e-005 1 0 |
+|0 0 -1 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-12 10 0.5 0.5 0.5
+Newton convergeix despres de 7 iteracions
+Solucio trobada:
+ x=|7.5702e-018 -4.81934e-018 1.5708 |
+F(x)=|-6.63292e-026 -4.81934e-018 6.12303e-017 |
+DF=|1 1.5708 -4.81934e-018 |
+|-1.51404e-017 1 0 |
+|0 0 -1 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-12 20 0.5 0.5 0.5
+Newton convergeix despres de 7 iteracions
+Solucio trobada:
+ x=|7.5702e-018 -4.81934e-018 1.5708 |
+F(x)=|-6.63292e-026 -4.81934e-018 6.12303e-017 |
+DF=|1 1.5708 -4.81934e-018 |
+|-1.51404e-017 1 0 |
+|0 0 -1 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-20 20 0.5 0.5 0.5
+Error : Newton no ha convergit amb 20 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-20 30 0.5 0.5 0.5
+Error : Newton no ha convergit amb 30 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-15 30 0.5 0.5 0.5
+Newton convergeix despres de 7 iteracions
+Solucio trobada:
+ x=|7.5702e-018 -4.81934e-018 1.5708 |
+F(x)=|-6.63292e-026 -4.81934e-018 6.12303e-017 |
+DF=|1 1.5708 -4.81934e-018 |
+|-1.51404e-017 1 0 |
+|0 0 -1 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-20 30 0.5 0.5 0.5
+Error : Newton no ha convergit amb 30 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 30 0.5 0.5 0.5
+Error : Newton no ha convergit amb 30 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 40 0.5 0.5 0.5
+Error : Newton no ha convergit amb 40 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 50 0.5 0.5 0.5
+Error : Newton no ha convergit amb 50 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 70 0.5 0.5 0.5
+Error : Newton no ha convergit amb 70 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 100 0.5 0.5 0.5
+Error : Newton no ha convergit amb 100 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-19 1000 0.5 0.5 0.5
+Error : Newton no ha convergit amb 1000 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-18 1000 0.5 0.5 0.5
+"PR2ex2" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make TestFunction.o
+mingw32-make: 'TestFunction.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make Newton_b.o
+mingw32-make: 'Newton_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>mingw32-make PR2ex2
+gcc -o PR2ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR2ex2.c Newton_b.o TestFunction.o QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-18 1000 0.5 0.5 0.5
+Error : Newton no ha convergit amb 1000 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-17 1000 0.5 0.5 0.5
+Error : Newton no ha convergit amb 1000 iteracions.
+El metode no convergeix.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>PR2ex2 1e-16 1000 0.5 0.5 0.5
+Newton convergeix despres de 7 iteracions
+Solucio trobada:
+ x=|7.5702e-018 -4.81934e-018 1.5708 |
+La solucio analitica real es |0 0 pi/2| on pi/2 es aproximadament 1,57079
+F(x)=|-6.63292e-026 -4.81934e-018 6.12303e-017 |
+DF=|1 1.5708 -4.81934e-018 |
+|-1.51404e-017 1 0 |
+|0 0 -1 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 02\PR2-2609>

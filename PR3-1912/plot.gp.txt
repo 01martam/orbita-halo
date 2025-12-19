@@ -1,0 +1,19 @@
+set datafile separator whitespace   # tab o espacios
+
+# === Grafica X ===
+set title "Comparació X_exacta vs X_aprox"
+set xlabel "t"
+set ylabel "x"
+set grid
+plot "dades.txt" u 1:2, "dades.txt" u 1:4
+
+pause -1 "Pulsa ENTER para continuar"
+
+# === Grafica Y ===
+set title "Comparació Y_exacta vs Y_aprox"
+set xlabel "t"
+set ylabel "y"
+set grid
+plot "dades.txt" using 1:3 with lines title "y_exacta", "dades.txt" using 1:5 with lines title "y_aprox"
+
+pause -1 "Pulsa ENTER para salir"

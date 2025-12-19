@@ -1,0 +1,1147 @@
+Microsoft Windows [Versión 10.0.19045.6093]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\m3333>cd desktop\C archivos
+
+C:\Users\m3333\Desktop\C archivos>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos
+
+24/09/2025  00:18    <DIR>          .
+24/09/2025  00:18    <DIR>          ..
+23/09/2025  19:48    <DIR>          customized-theme
+23/09/2025  19:47             4.521 customized-theme.zip
+24/09/2025  22:22    <DIR>          Càlcul númeric
+02/03/2024  01:04    <DIR>          EIM
+01/06/2024  20:13    <DIR>          MN
+23/04/2025  21:26    <DIR>          Taller
+23/09/2025  18:10               109 Untitled1.c
+23/09/2025  18:11            54.024 Untitled1.exe
+23/09/2025  18:11               898 Untitled1.o
+               4 archivos         59.552 bytes
+               7 dirs  48.264.540.160 bytes libres
+
+C:\Users\m3333\Desktop\C archivos>cd càlcul númeric
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric
+
+24/09/2025  22:22    <DIR>          .
+24/09/2025  22:22    <DIR>          ..
+22/09/2025  12:34            86.991 ajuda.pdf
+22/09/2025  12:03               528 Codi Pèndol-20250922.zip
+22/09/2025  12:03             1.337 Codi RTBP-20250922.zip
+22/09/2025  12:36           715.971 guio_prac.pdf
+22/09/2025  12:00           283.041 guio_prac_intro.pdf
+26/09/2025  19:35    <DIR>          Practica 01
+26/09/2025  19:18    <DIR>          Practica 02
+23/09/2025  18:16    <DIR>          Practica 03
+23/09/2025  18:16    <DIR>          Practica 04
+               5 archivos      1.087.868 bytes
+               6 dirs  48.264.548.352 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric>cd Practica 01
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01
+
+26/09/2025  19:35    <DIR>          .
+26/09/2025  19:35    <DIR>          ..
+22/09/2025  13:52           472.052 guio_prac1.pdf
+24/09/2025  19:04    <DIR>          PR1-2009
+24/09/2025  18:43    <DIR>          PR1-2309
+24/09/2025  23:00    <DIR>          PR1-2409
+26/09/2025  20:21    <DIR>          PR1-2609
+               1 archivos        472.052 bytes
+               6 dirs  48.264.671.232 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01>cd PR1-2609
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609
+
+26/09/2025  20:21    <DIR>          .
+26/09/2025  20:21    <DIR>          ..
+24/09/2025  22:14               577 Makefile
+26/09/2025  19:47               746 PR1ex2.c
+26/09/2025  19:48             1.865 PR1ex2.o
+26/09/2025  19:50               886 PR1ex3.c
+26/09/2025  19:50             2.177 PR1ex3.o
+26/09/2025  19:51             2.376 PR1ex4.c
+26/09/2025  20:21             7.919 QRsolve_b.c
+24/09/2025  21:29               437 QRsolve_b.h
+26/09/2025  20:21             5.978 QRsolve_b.o
+               9 archivos         22.961 bytes
+               2 dirs  48.264.597.504 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+PR1ex2.c: In function 'main':
+PR1ex2.c:24:31: warning: passing argument 8 of 'QRsolve' makes pointer from integer without a cast [-Wint-conversion]
+     QRsolve(m,n,a,b,tau,x,tol,1);
+                               ^
+In file included from PR1ex2.c:4:
+QRsolve_b.h:9:89: note: expected 'int *' but argument is of type 'int'
+ int QRsolve(int m, int n, double *a, double *b, double *tau, double *x, double tol,int *pasos);
+                                                                                    ~~~~~^~~~~
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+PR1ex2.c: In function 'main':
+PR1ex2.c:29:31: warning: passing argument 8 of 'QRsolve' makes pointer from integer without a cast [-Wint-conversion]
+     QRsolve(m,n,a,b,tau,x,tol,1);
+                               ^
+In file included from PR1ex2.c:4:
+QRsolve_b.h:9:89: note: expected 'int *' but argument is of type 'int'
+ int QRsolve(int m, int n, double *a, double *b, double *tau, double *x, double tol,int *pasos);
+                                                                                    ~~~~~^~~~~
+PR1ex2.c:38:5: warning: 'c' is used uninitialized in this function [-Wuninitialized]
+     matriu_x_vector(a0,x,c,m,n);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make realclean
+cmd /C del /Q *.o
+cmd /C del /Q PR1ex2.exe PR1ex3.exe PR1ex4.exe
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make realclean
+cmd /C del /Q *.o
+cmd /C del /Q PR1ex2.exe PR1ex3.exe PR1ex4.exe
+No se pudo encontrar C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609\PR1ex2.exe
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>void matriu_x_vector(double *a,double *b, double *c, int m, int n)
+"void" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+Combrobem-ho:
+|   1.000    0.000 |
+==|   1.000    3.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+Combrobem-ho:
+|   1.000    0.000    2.000 |
+==|   1.000    3.000    2.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+PR1ex2.c: In function 'main':
+PR1ex2.c:42:28: warning: passing argument 3 of 'imprimir_matriu' makes pointer from integer without a cast [-Wint-conversion]
+     imprimir_matriu(1, m, c-b0);
+                           ~^~~
+In file included from PR1ex2.c:4:
+QRsolve_b.h:7:43: note: expected 'double *' but argument is of type 'long long int'
+ void imprimir_matriu(int m, int n,double *a);
+                                   ~~~~~~~~^
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+Combrobem-ho:
+|   1.000    0.000    2.000 |
+-|   1.000    3.000    2.000 |
+==|   0.000    0.000    0.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+PR1ex3.c: In function 'main':
+PR1ex3.c:18:12: warning: unused variable 'a0' [-Wunused-variable]
+     double a0[] = {
+            ^~
+PR1ex3.c:13:12: warning: unused variable 'a' [-Wunused-variable]
+     double a[] = {
+            ^
+PR1ex3.c:12:40: warning: unused variable 'tol' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                                        ^~~
+PR1ex3.c:12:29: warning: unused variable 'tau' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                             ^~~
+PR1ex3.c:12:24: warning: unused variable 'x' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                        ^
+PR1ex3.c:12:12: warning: unused variable 'b' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+            ^
+PR1ex3.c: At top level:
+PR1ex3.c:23:6: error: expected identifier or '(' before ',' token
+     },b0[]={1,2,3},c[m];
+      ^
+PR1ex3.c:23:19: error: expected identifier or '(' before ',' token
+     },b0[]={1,2,3},c[m];
+                   ^
+PR1ex3.c:27:12: error: expected declaration specifiers or '...' before string constant
+     printf("Tenim la matriu\n");
+            ^~~~~~~~~~~~~~~~~~~
+PR1ex3.c:28:5: warning: data definition has no type or storage class
+     imprimir_matriu(m,n,a);
+     ^~~~~~~~~~~~~~~
+PR1ex3.c:28:5: warning: type defaults to 'int' in declaration of 'imprimir_matriu' [-Wimplicit-int]
+PR1ex3.c:28:5: warning: parameter names (without types) in function declaration
+PR1ex3.c:28:5: error: conflicting types for 'imprimir_matriu'
+In file included from PR1ex3.c:4:
+QRsolve_b.h:7:6: note: previous declaration of 'imprimir_matriu' was here
+ void imprimir_matriu(int m, int n,double *a);
+      ^~~~~~~~~~~~~~~
+PR1ex3.c:30:12: error: expected declaration specifiers or '...' before string constant
+     printf("I el vector b\n");
+            ^~~~~~~~~~~~~~~~~
+PR1ex3.c:31:23: error: expected ')' before numeric constant
+     imprimir_matriu(m, 1,b);
+                       ^~
+                       )
+PR1ex3.c:32:12: error: expected declaration specifiers or '...' before string constant
+     printf("\n\n");
+            ^~~~~~
+PR1ex3.c:34:31: error: expected ')' before numeric constant
+     QRsolve(m,n,a,b,tau,x,tol,0);
+                               ^
+                               )
+PR1ex3.c:36:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nLa solucio del sistema es :\n");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PR1ex3.c:37:12: error: expected declaration specifiers or '...' before string constant
+     printf("x=");
+            ^~~~
+PR1ex3.c:38:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, n, x);
+                     ^
+PR1ex3.c:38:24: error: unknown type name 'n'
+     imprimir_matriu(1, n, x);
+                        ^
+PR1ex3.c:38:27: error: unknown type name 'x'
+     imprimir_matriu(1, n, x);
+                           ^
+PR1ex3.c:40:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nR=");
+            ^~~~~~
+PR1ex3.c:41:5: warning: data definition has no type or storage class
+     imprimir_matriu(m,n,a);
+     ^~~~~~~~~~~~~~~
+PR1ex3.c:41:5: warning: type defaults to 'int' in declaration of 'imprimir_matriu' [-Wimplicit-int]
+PR1ex3.c:41:5: warning: parameter names (without types) in function declaration
+PR1ex3.c:41:5: error: conflicting types for 'imprimir_matriu'
+In file included from PR1ex3.c:4:
+QRsolve_b.h:7:6: note: previous declaration of 'imprimir_matriu' was here
+ void imprimir_matriu(int m, int n,double *a);
+      ^~~~~~~~~~~~~~~
+PR1ex3.c:43:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nQb=");
+            ^~~~~~~
+PR1ex3.c:44:23: error: expected ')' before numeric constant
+     imprimir_matriu(m, 1,b);
+                       ^~
+                       )
+PR1ex3.c:46:12: error: expected declaration specifiers or '...' before string constant
+     printf("\n Mirem que x ├®s la solucio:\n");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PR1ex3.c:47:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, m, c);
+                     ^
+PR1ex3.c:47:24: error: unknown type name 'm'
+     imprimir_matriu(1, m, c);
+                        ^
+PR1ex3.c:47:27: error: unknown type name 'c'
+     imprimir_matriu(1, m, c);
+                           ^
+PR1ex3.c:48:12: error: expected declaration specifiers or '...' before string constant
+     printf("-");
+            ^~~
+PR1ex3.c:49:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, m, b0);
+                     ^
+PR1ex3.c:49:24: error: unknown type name 'm'
+     imprimir_matriu(1, m, b0);
+                        ^
+PR1ex3.c:49:27: error: unknown type name 'b0'
+     imprimir_matriu(1, m, b0);
+                           ^~
+PR1ex3.c:50:12: error: expected declaration specifiers or '...' before string constant
+     printf("==");
+            ^~~~
+PR1ex3.c:52:5: error: expected ',' or ';' before 'imprimir_matriu'
+     imprimir_matriu(1, m,zero);
+     ^~~~~~~~~~~~~~~
+PR1ex3.c:55:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+PR1ex3.c:56:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+mingw32-make: *** [Makefile:21: PR1ex3] Error 1
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+PR1ex3.c: In function 'main':
+PR1ex3.c:18:12: warning: unused variable 'a0' [-Wunused-variable]
+     double a0[] = {
+            ^~
+PR1ex3.c:13:12: warning: unused variable 'a' [-Wunused-variable]
+     double a[] = {
+            ^
+PR1ex3.c:12:40: warning: unused variable 'tol' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                                        ^~~
+PR1ex3.c:12:29: warning: unused variable 'tau' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                             ^~~
+PR1ex3.c:12:24: warning: unused variable 'x' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+                        ^
+PR1ex3.c:12:12: warning: unused variable 'b' [-Wunused-variable]
+     double b[]={1,2,3},x[n],tau[kmax], tol= 1e-12;
+            ^
+PR1ex3.c: At top level:
+PR1ex3.c:23:6: error: expected identifier or '(' before ',' token
+     },b0[]={1,2,3},c[m];
+      ^
+PR1ex3.c:23:19: error: expected identifier or '(' before ',' token
+     },b0[]={1,2,3},c[m];
+                   ^
+PR1ex3.c:27:12: error: expected declaration specifiers or '...' before string constant
+     printf("Tenim la matriu\n");
+            ^~~~~~~~~~~~~~~~~~~
+PR1ex3.c:28:5: warning: data definition has no type or storage class
+     imprimir_matriu(m,n,a);
+     ^~~~~~~~~~~~~~~
+PR1ex3.c:28:5: warning: type defaults to 'int' in declaration of 'imprimir_matriu' [-Wimplicit-int]
+PR1ex3.c:28:5: warning: parameter names (without types) in function declaration
+PR1ex3.c:28:5: error: conflicting types for 'imprimir_matriu'
+In file included from PR1ex3.c:4:
+QRsolve_b.h:7:6: note: previous declaration of 'imprimir_matriu' was here
+ void imprimir_matriu(int m, int n,double *a);
+      ^~~~~~~~~~~~~~~
+PR1ex3.c:30:12: error: expected declaration specifiers or '...' before string constant
+     printf("I el vector b\n");
+            ^~~~~~~~~~~~~~~~~
+PR1ex3.c:31:23: error: expected ')' before numeric constant
+     imprimir_matriu(m, 1,b);
+                       ^~
+                       )
+PR1ex3.c:32:12: error: expected declaration specifiers or '...' before string constant
+     printf("\n\n");
+            ^~~~~~
+PR1ex3.c:34:31: error: expected ')' before numeric constant
+     QRsolve(m,n,a,b,tau,x,tol,0);
+                               ^
+                               )
+PR1ex3.c:36:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nLa solucio del sistema es :\n");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PR1ex3.c:37:12: error: expected declaration specifiers or '...' before string constant
+     printf("x=");
+            ^~~~
+PR1ex3.c:38:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, n, x);
+                     ^
+PR1ex3.c:38:24: error: unknown type name 'n'
+     imprimir_matriu(1, n, x);
+                        ^
+PR1ex3.c:38:27: error: unknown type name 'x'
+     imprimir_matriu(1, n, x);
+                           ^
+PR1ex3.c:40:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nR=");
+            ^~~~~~
+PR1ex3.c:41:5: warning: data definition has no type or storage class
+     imprimir_matriu(m,n,a);
+     ^~~~~~~~~~~~~~~
+PR1ex3.c:41:5: warning: type defaults to 'int' in declaration of 'imprimir_matriu' [-Wimplicit-int]
+PR1ex3.c:41:5: warning: parameter names (without types) in function declaration
+PR1ex3.c:41:5: error: conflicting types for 'imprimir_matriu'
+In file included from PR1ex3.c:4:
+QRsolve_b.h:7:6: note: previous declaration of 'imprimir_matriu' was here
+ void imprimir_matriu(int m, int n,double *a);
+      ^~~~~~~~~~~~~~~
+PR1ex3.c:43:12: error: expected declaration specifiers or '...' before string constant
+     printf("\nQb=");
+            ^~~~~~~
+PR1ex3.c:44:23: error: expected ')' before numeric constant
+     imprimir_matriu(m, 1,b);
+                       ^~
+                       )
+PR1ex3.c:46:12: error: expected declaration specifiers or '...' before string constant
+     printf("\n Mirem que x ├®s la solucio:\n");
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+PR1ex3.c:47:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, m, c);
+                     ^
+PR1ex3.c:47:24: error: unknown type name 'm'
+     imprimir_matriu(1, m, c);
+                        ^
+PR1ex3.c:47:27: error: unknown type name 'c'
+     imprimir_matriu(1, m, c);
+                           ^
+PR1ex3.c:48:12: error: expected declaration specifiers or '...' before string constant
+     printf("-");
+            ^~~
+PR1ex3.c:49:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, m, b0);
+                     ^
+PR1ex3.c:49:24: error: unknown type name 'm'
+     imprimir_matriu(1, m, b0);
+                        ^
+PR1ex3.c:49:27: error: unknown type name 'b0'
+     imprimir_matriu(1, m, b0);
+                           ^~
+PR1ex3.c:50:12: error: expected declaration specifiers or '...' before string constant
+     printf("==");
+            ^~~~
+PR1ex3.c:52:21: error: expected declaration specifiers or '...' before numeric constant
+     imprimir_matriu(1, m,zero);
+                     ^
+PR1ex3.c:52:24: error: unknown type name 'm'
+     imprimir_matriu(1, m,zero);
+                        ^
+PR1ex3.c:52:26: error: expected declaration specifiers or '...' before 'zero'
+     imprimir_matriu(1, m,zero);
+                          ^~~~
+PR1ex3.c:55:5: error: expected identifier or '(' before 'return'
+     return 0;
+     ^~~~~~
+PR1ex3.c:56:1: error: expected identifier or '(' before '}' token
+ }
+ ^
+mingw32-make: *** [Makefile:21: PR1ex3] Error 1
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+PR1ex3.c: In function 'main':
+PR1ex3.c:18:12: warning: unused variable 'a0' [-Wunused-variable]
+     double a0[] = {
+            ^~
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex3.exe
+Tenim la matriu
+|  12.000  -51.000    4.000 |
+|   6.000  167.000  -68.000 |
+|  -4.000   24.000  -41.000 |
+I el vector b
+|   1.000 |
+|   2.000 |
+|   3.000 |
+
+
+
+La solucio del sistema es :
+x=|   0.009   -0.024   -0.088 |
+
+R=| -14.000  -21.000   14.000 |
+|   0.231 -175.000   70.000 |
+|  -0.154    0.056  -35.000 |
+
+Qb=|  -0.857 |
+|  -1.926 |
+|   3.091 |
+
+ Mirem que x ├®s la solucio:
+|   1.000    2.000    3.000 |
+-|   1.000    2.000    3.000 |
+==|   0.000    0.000    0.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex2.exe
+Tenim la matriu
+|   0.000   -4.000 |
+|   0.000    0.000 |
+|   5.000   -2.000 |
+I el vector b
+|   1.000 |
+|   3.000 |
+|   2.000 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|   5.000   -2.000 |
+|  -0.000    0.000 |
+|  -1.000   -4.000 |
+vector b despres del pas 0:
+b^(1)=|   2.000 |
+|   3.000 |
+|   1.000 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|   5.000   -2.000 |
+|  -0.000    4.000 |
+|  -1.000    1.000 |
+vector b despres del pas 1:
+b^(2)=|   2.000 |
+|  -1.000 |
+|  -3.000 |
+tau=|   1.000    1.000 |
+
+La solucio del sistema es :
+x=|   0.300   -0.250 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+mingw32-make: 'QRsolve_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex4
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex2
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex3.exe
+Tenim la matriu
+|  12.000  -51.000    4.000 |
+|   6.000  167.000  -68.000 |
+|  -4.000   24.000  -41.000 |
+I el vector b
+|   1.000 |
+|   2.000 |
+|   3.000 |
+
+
+
+La solucio del sistema es :
+x=|   0.009   -0.024   -0.088 |
+
+R=| -14.000  -21.000   14.000 |
+|   0.231 -175.000   70.000 |
+|  -0.154    0.056  -35.000 |
+
+Qb=|  -0.857 |
+|  -1.926 |
+|   3.091 |
+
+ Mirem que x ├®s la solucio:
+|   1.000    2.000    3.000 |
+==|   1.000    2.000    3.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex3.exe
+Tenim la matriu
+|  12.000  -51.000    4.000 |
+|   6.000  167.000  -68.000 |
+|  -4.000   24.000  -41.000 |
+I el vector b
+|   1.000 |
+|   2.000 |
+|   3.000 |
+
+
+
+La solucio del sistema es :
+x=|   0.009   -0.024   -0.088 |
+
+R=| -14.000  -21.000   14.000 |
+|   0.231 -175.000   70.000 |
+|  -0.154    0.056  -35.000 |
+
+Qb=|  -0.857 |
+|  -1.926 |
+|   3.091 |
+
+ Mirem que x ├®s la solucio:
+A*b=|   1.000    2.000    3.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex4.exe 10
+Tenim la matriu
+|   0.191    0.500    0.375    0.570    0.020    0.575    0.813    0.620    0.329    0.990 |
+|   0.159    0.011    0.293    0.630    0.464    0.398    0.177    0.564    0.925    0.068 |
+|   0.612    0.380    0.706    0.109    0.080    0.435    0.040    0.413    0.932    0.352 |
+|   0.867    0.589    0.425    0.427    0.997    0.628    0.710    0.106    0.558    0.065 |
+|   0.704    0.436    0.516    0.500    0.634    0.172    0.034    0.956    0.156    0.371 |
+|   0.550    0.700    0.625    0.824    0.015    0.564    0.234    0.167    0.192    0.188 |
+|   0.944    0.326    0.265    0.859    0.110    0.632    0.103    0.122    0.314    0.830 |
+|   0.459    0.211    0.584    0.338    0.272    0.259    0.645    0.389    0.589    0.232 |
+|   0.851    0.715    0.996    0.839    0.462    0.688    0.392    0.991    0.341    0.712 |
+|   0.271    0.883    0.894    0.944    0.325    0.545    0.076    0.080    0.356    0.711 |
+I el vector b
+|   4.982 |
+|   3.689 |
+|   4.058 |
+|   5.373 |
+|   4.478 |
+|   4.058 |
+|   4.506 |
+|   3.977 |
+|   6.987 |
+|   5.086 |
+
+
+tau=|   1.097    1.139    1.377    1.662    1.169    1.290    1.268    1.561    2.000 |
+
+La solucio del sistema es :
+x=|   1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000    1.000 |
+error maxim:3.552714e-015
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make QRsolve_b.o
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex3.exe
+Tenim la matriu
+|  12.000  -51.000    4.000 |
+|   6.000  167.000  -68.000 |
+|  -4.000   24.000  -41.000 |
+I el vector b
+|   1.000 |
+|   2.000 |
+|   3.000 |
+
+
+
+La solucio del sistema es :
+x=|   0.009   -0.024   -0.088 |
+
+R=| -14.000  -21.000   14.000 |
+|   0.231 -175.000   70.000 |
+|  -0.154    0.056  -35.000 |
+
+Qb=|  -0.857 |
+|  -1.926 |
+|   3.091 |
+
+ Mirem que x ├®s la solucio:
+A*b=|   1.000    2.000    3.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make PR1ex3
+gcc -c -M -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+QRsolve_b.o: QRsolve_b.c \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdio.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/crtdefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_mac.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_secapi.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/vadefs.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_directx.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_push.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_off_t.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/swprintf.inl \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/_mingw_print_pop.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/stdlib.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/syslimits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/limits.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/malloc.h \
+ C:/Program\ Files/CodeBlocks/MinGW/x86_64-w64-mingw32/include/math.h
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex3.exe
+Tenim la matriu
+|  12.000  -51.000    4.000 |
+|   6.000  167.000  -68.000 |
+|  -4.000   24.000  -41.000 |
+I el vector b
+|   1.000 |
+|   2.000 |
+|   3.000 |
+
+
+
+La solucio del sistema es :
+x=|   0.009   -0.024   -0.088 |
+
+R=| -14.000  -21.000   14.000 |
+|   0.231 -175.000   70.000 |
+|  -0.154    0.056  -35.000 |
+
+Qb=|  -0.857 |
+|  -1.926 |
+|   3.091 |
+
+ Mirem que x ├®s la solucio:
+A*x=|   1.000    2.000    3.000 |
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>PR1ex4.exe 0
+PR1ex4.exe n
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>mingw32-make realclean
+cmd /C del /Q *.o
+cmd /C del /Q PR1ex2.exe PR1ex3.exe PR1ex4.exe
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609
+
+26/09/2025  21:42    <DIR>          .
+26/09/2025  21:42    <DIR>          ..
+24/09/2025  22:14               577 Makefile
+26/09/2025  21:31               796 PR1ex2.c
+26/09/2025  21:40             1.239 PR1ex3.c
+26/09/2025  21:41             2.357 PR1ex4.c
+26/09/2025  21:36             8.031 QRsolve_b.c
+26/09/2025  21:36               430 QRsolve_b.h
+               6 archivos         13.430 bytes
+               2 dirs  49.942.896.640 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>cd càlcul númeric
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>cd ..\..\càlcul númeric
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <stdio.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <stdlib.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <math.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include "QRsolve_b.h"
+"#include" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <stdio.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <stdlib.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include <math.h>
+La sintaxis del comando no es correcta.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>#include "QRsolve_b.h"
+"#include" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 01\PR1-2609>

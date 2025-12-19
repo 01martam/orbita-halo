@@ -1,0 +1,232 @@
+Microsoft Windows [Versión 10.0.19045.6332]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\m3333>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333
+
+27/04/2025  19:11    <DIR>          .
+27/04/2025  19:11    <DIR>          ..
+05/05/2025  00:22               266 .bash_history
+27/04/2025  19:11    <DIR>          .cache
+04/06/2025  16:53    <DIR>          .ccache
+13/10/2020  20:26            42.926 .ipynb
+22/02/2021  20:38    <DIR>          .ipynb_checkpoints
+29/09/2020  23:31    <DIR>          .local
+21/02/2023  19:52    <DIR>          .ms-ad
+01/06/2025  17:50    <DIR>          .musixmatch
+03/01/2024  19:56    <DIR>          .sage
+25/02/2021  01:16    <DIR>          3D Objects
+25/02/2021  01:16    <DIR>          Contacts
+21/10/2025  17:55    <DIR>          Desktop
+21/10/2025  18:13    <DIR>          Documents
+21/10/2025  18:21    <DIR>          Downloads
+25/02/2021  01:16    <DIR>          Favorites
+25/02/2021  01:16    <DIR>          Links
+22/10/2020  21:41                22 miktex-console.lock
+31/07/2025  15:04    <DIR>          Music
+11/08/2021  18:02    <DIR>          OneDrive
+11/01/2025  16:16    <DIR>          Pictures
+04/02/2021  10:13    <DIR>          practicas
+25/02/2021  01:16    <DIR>          Saved Games
+26/06/2022  15:54    <DIR>          Searches
+22/02/2021  20:40             1.719 Untitled.ipynb
+22/02/2021  20:38                72 Untitled1.ipynb
+22/08/2021  18:08    <DIR>          Videos
+               5 archivos         45.005 bytes
+              23 dirs  49.585.938.432 bytes libres
+
+C:\Users\m3333>cd Downloads
+
+C:\Users\m3333\Downloads>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Downloads
+
+21/10/2025  18:21    <DIR>          .
+21/10/2025  18:21    <DIR>          ..
+07/04/2024  18:06           567.566 1607177.zip
+21/12/2020  19:12           308.309 20201216AlgLinTeoria.pdf
+21/12/2020  19:12           235.171 20201221AlgLinTeoria.pdf
+01/03/2024  17:19        12.048.858 55 proves sense paraules.pdf
+19/12/2024  19:44         1.163.631 bookmarks_19_12_24.html
+22/07/2020  13:49            71.500 c30fec09-c6ff-4d13-8a7b-fccecff55fb5 2.pdf
+22/07/2020  11:37            86.087 c30fec09-c6ff-4d13-8a7b-fccecff55fb5.pdf
+06/01/2025  16:31           631.342 Calligraphr-Te5.pdf
+06/01/2025  16:28           878.045 Calligraphr-Te5_250106_162821.pdf
+06/01/2025  17:25           437.731 Calligraphr-Template (2)_250106_172405.pdf
+06/01/2025  17:28           415.270 Calligraphr-Template (2)_250106_172824.pdf
+06/01/2025  17:43           139.781 Calligraphr-Template (3)_250106_174316.pdf
+11/01/2025  16:21    <DIR>          classes videoa
+01/02/2023  21:38         3.484.324 correcciolliurament.pdf
+01/02/2023  21:34           925.840 correccioteoria.pdf
+06/01/2025  16:44           882.580 DOC-20250106-WA0002_250106_164424.pdf
+13/07/2020  13:32            27.104 document.pdf
+15/11/2023  21:31           611.639 EIM_Latex.pdf
+19/05/2023  20:27           195.489 Eines Informàtiques per a les Matemàtiques [MO53956]_ Escape C. Lliurament final.html
+19/05/2023  20:22         2.033.509 Eines Informàtiques per a les Matemàtiques [MO53956]_ Escape C. Lliurament final.mhtml
+19/05/2023  20:29           494.173 Eines Informàtiques per a les Matemàtiques [MO53956]_ Escape C. Lliurament final.pdf
+13/12/2024  19:19           109.042 EjerciciosconexidadII.pdf
+13/12/2024  19:19           145.285 EjerciciosEVNII.pdf
+13/12/2024  19:19           150.310 EVN1.pdf
+20/12/2023  20:06           236.936 Llista8-CDV_Prob_2023_2024.pdf
+15/11/2023  17:53           199.631 Martín D. Safe. Planaridad. 2018..pdf
+06/01/2025  17:34            26.728 MisNumeros-Regular.ttf
+06/01/2025  17:24            25.620 Myfont-Regular.ttf
+06/01/2025  17:45            26.848 Mynumbers-Regular.ttf
+11/11/2023  23:01           469.593 On the Colouring of Maps Caley.pdf
+01/03/2024  17:28         3.516.477 solucions-llista-1-2023.pdf
+24/03/2024  02:39         5.238.347 solucions-llista-2.pdf
+01/03/2024  17:35           426.557 SomeMotivatingExamples.pdf
+06/01/2025  16:00         4.980.736 spacedesk_driver_Win_10_64_v2131.msi
+              33 archivos     41.190.059 bytes
+               3 dirs  49.585.807.360 bytes libres
+
+C:\Users\m3333\Downloads>cd C archivos\Càlcul númeric\Practica 03\PR3-2110
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\m3333\Downloads>cd C archivos
+El sistema no puede encontrar la ruta especificada.
+
+C:\Users\m3333\Downloads>cd C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>dir
+ El volumen de la unidad C es Windows
+ El número de serie del volumen es: DE48-154F
+
+ Directorio de C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110
+
+21/10/2025  23:56    <DIR>          .
+21/10/2025  23:56    <DIR>          ..
+08/10/2025  13:06                 0 .Rhistory
+07/11/2024  19:00             2.656 AnotherTest-RKF78.c
+12/10/2025  01:49               129 cas1.txt
+12/10/2025  01:48               129 cas2.txt
+12/10/2025  01:46               460 Makefile
+21/10/2025  23:55             4.728 PR3ex2.c
+12/10/2025  01:48            74.309 PR3ex2.exe
+21/10/2025  23:56             2.520 PR3ex3.c
+12/10/2025  01:48            69.401 PR3ex3.exe
+21/10/2025  23:47            12.602 rk45_b.c
+21/10/2025  23:53               324 rk45_b.h
+21/10/2025  23:47             5.649 rk45_b.o
+07/11/2024  19:15               657 Test-RKF78.c
+12/10/2025  01:14             5.241 Test_RKF78Sys.c
+              14 archivos        178.805 bytes
+               2 dirs  49.584.234.496 bytes libres
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>mingw32-make all
+mingw32-make: Nothing to be done for 'all'.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>mingw32-make rk45_b.o
+mingw32-make: 'rk45_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>mingw32-make realclean
+cmd /C del /Q *.o
+cmd /C del /Q PR3ex2.exe PR3ex3.exe
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111^Z
+"C:\Users\m3333\Desktop\C" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-2110>cd C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make rk45_b.o
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation rk45_b.c -lm
+rk45_b.c:41:16: warning: 'b' defined but not used [-Wunused-variable]
+  static double b[6] = {25./216., 0., 1408./2565., 2197./4104., -1./5.,0.};//ordre 4
+                ^
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe
+PR3ex2.exe a T x0 y0 h hmin hmax
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.01 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make rk45_b.o
+mingw32-make: 'rk45_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.01 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make rk45_b.o
+mingw32-make: 'rk45_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+PR3ex2.c: In function 'main':
+PR3ex2.c:64:8: warning: implicit declaration of function 'rk45_VF'; did you mean 'RKF45_VF'? [-Wimplicit-function-declaration]
+     if(rk45_VF(&t,x,&h,hmin,hmax,1e-12,n,camp,prm)!=0){
+        ^~~~~~~
+        RKF45_VF
+C:\Users\m3333\AppData\Local\Temp\ccOKZPD0.o: In function `main':
+C:\Users\m3333\Desktop\C archivos\CÓlcul n·meric\Practica 03\PR3-1111/PR3ex2.c:64: undefined reference to `rk45_VF'
+collect2.exe: error: ld returned 1 exit status
+mingw32-make: *** [Makefile:19: PR3ex2] Error 1
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make rk45_b.o
+mingw32-make: 'rk45_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.01 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make rk45_b.o
+mingw32-make: 'rk45_b.o' is up to date.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.01 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 2*pi 1 1 0.1 0.01 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>mingw32-make PR3ex2
+gcc -o PR3ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR3ex2.c rk45_b.o -lm
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1  6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1  6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1 - 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+PR3ex2.exe a T x0 y0 h hmin hmax
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1 - 6,283185307179586476925286766559 1 1 0.1 0.000001 0.9
+PR3ex2.exe a T x0 y0 h hmin hmax
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>0.1 -6,283185307179586476925286766559 1 1 0.1 0.00001 0.9
+"0.1" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe >0.1 -6,283185307179586476925286766559 1 1 0.1 0.00001 0.
+PR3ex2.exe a T x0 y0 h hmin hmax
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe >0.1 -6,283185307179586476925286766559 1 1 0.1 0.00001 0.^Z
+PR3ex2.exe a T x0 y0 h hmin hmax
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1 -6,283185307179586476925286766559 1 1 0.1 0.00001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>PR3ex2.exe 0.1 -6,283185307179586476925286766559 1 1 -0.1 0.000001 0.9
+
+C:\Users\m3333\Desktop\C archivos\Càlcul númeric\Practica 03\PR3-1111>0.1 -6,283185307179586476925286766559 1 1 0.1 0.00001 0.9

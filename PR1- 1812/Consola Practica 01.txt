@@ -1,0 +1,98 @@
+1607177@uab.cat@CCBC-pc2-12-L:~$ ls
+Baixades  Desktop  Documents  Imatges  Música  opengnsys.log  Plantilles  Públic  R  Vídeos
+1607177@uab.cat@CCBC-pc2-12-L:~$ cd ~/Desktop
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop$ ls
+'Càlcul númeric'    org.kde.konsole.desktop   PR2-0810            reboot.desktop
+ docencia.desktop   PR1-0810                 'Programari Aules'   shutdown.desktop
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop$ cd PR1-0810
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ ls
+'consola .txt'   Makefile   PR1ex2.c   PR1ex3.c   PR1ex4.c   QRsolve_b.c   QRsolve_b.h
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ make all
+gcc -c -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation QRsolve_b.c
+gcc -o PR1ex2 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex2.c QRsolve_b.o -lm
+gcc -o PR1ex3 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex3.c QRsolve_b.o -lm
+gcc -o PR1ex4 -g -Wall -fdiagnostics-color=always -Wno-misleading-indentation PR1ex4.c QRsolve_b.o -lm
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ ./PR1ex2
+Tenim la matriu
+|0 -4 |
+|0 0 |
+|5 -2 |
+I el vector b
+|1 |
+|3 |
+|2 |
+
+
+Descomposicio de A:
+iterat k=0:
+Matriu A despres del pas 0:
+A^(1)=|5 -2 |
+|-0 0 |
+|-1 -4 |
+vector b despres del pas 0:
+b^(1)=|2 |
+|3 |
+|1 |
+iterat k=1:
+Matriu A despres del pas 1:
+A^(2)=|5 -2 |
+|-0 4 |
+|-1 1 |
+vector b despres del pas 1:
+b^(2)=|2 |
+|-1 |
+|-3 |
+tau=|1 1 |
+
+La solucio del sistema es :
+x=|0.3 -0.25 |
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ ./PR1ex3
+Tenim la matriu
+|12 -51 4 |
+|6 167 -68 |
+|-4 24 -41 |
+I el vector b
+|1 |
+|2 |
+|3 |
+
+
+
+La solucio del sistema es :
+x=|0.00938776 -0.0243265 -0.0883265 |
+
+R=|-14 -21 14 |
+|0.230769 -175 70 |
+|-0.153846 0.0555556 -35 |
+
+Qb=|-0.857143 |
+|-1.92571 |
+|3.09143 |
+
+ Mirem que x és la solucio:
+A*x=|1 2 3 |
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ ./PR1ex4 5
+Tenim la matriu
+|0.680231 0.467695 0.333477 0.00794991 0.372181 |
+|0.829629 0.768847 0.410579 0.164811 0.232066 |
+|0.795528 0.421506 0.259522 0.469548 0.515317 |
+|0.575247 0.296202 0.1973 0.0109155 0.0542914 |
+|0.101339 0.810391 0.988585 0.933772 0.89234 |
+I el vector b
+|1.86153 |
+|2.40593 |
+|2.46142 |
+|1.13396 |
+|3.72643 |
+
+
+
+La solucio del sistema es :
+x=|1 1 1 1 1 |
+error maxim:1.887379e-15
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ make clean
+rm -f *.o
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ make realclean
+rm -f *.o
+rm -f PR1ex2 PR1ex3 PR1ex4 
+1607177@uab.cat@CCBC-pc2-12-L:~/Desktop/PR1-0810$ 
