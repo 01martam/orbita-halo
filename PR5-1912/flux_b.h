@@ -1,0 +1,3 @@
+void imprimir_vector(int n,double *a);
+int flux2(double *t, double *x, double *h, double T, double hmin, double hmax, double tol, int npasmax, int n,int (*camp)(int n, double t, double *x, double *f, double *prm),double *prm,int miss);
+int flux(double *t, double *x, double *h, double T, double hmin, double hmax, double tol, int npasmax, int n,int (*camp)(int n, double t, double *x, double *f, double *prm),double *prm,int miss);
