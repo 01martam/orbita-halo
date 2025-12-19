@@ -38,9 +38,9 @@ int main(int argc, char *argv[]){
   }
 
   /*Fi de linia de comandes*/
-  FILE *archiu= fopen("Archiu.txt","w");
+  FILE *archiu= fopen("arxiu.txt","w");
   if(archiu==NULL){
-    fprintf(stderr,"No s'ha pogut obrir Archiu.txt\n");
+    fprintf(stderr,"No s'ha pogut obrir arxiu.txt\n");
     return -1;
   }
   double x[2],x_exac[2];
