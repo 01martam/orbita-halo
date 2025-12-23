@@ -33,16 +33,16 @@ rtbp.o : rtbp.c
 pendol.o : pendol.c
 	gcc -c $(CFLAGS) $<
 
-PR5ex2 : PR5ex2.c opham_b.o pendol.o QRsolve_b.o flux_b.o rk45_b.o Newton_b.o
+PR5ex2$(EXT) : PR5ex2.c opham_b.o pendol.o QRsolve_b.o flux_b.o rk45_b.o Newton_b.o
 	gcc -o $@ $(CFLAGS) PR5ex2.c opham_b.o pendol.o QRsolve_b.o flux_b.o rk45_b.o Newton_b.o -lm
 
-opham_pendol : opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
+opham_pendol$(EXT) : opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
 	gcc -o $@ $(CFLAGS) opham_pendol.c opham_b.o pendol.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
 
-opham_rtbp : opham_rtbp.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
+opham_rtbp$(EXT) : opham_rtbp.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
 	gcc -o $@ $(CFLAGS) opham_rtbp.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
 
-rtbp_int : rtbp_int.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
+rtbp_int$(EXT) : rtbp_int.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o
 	gcc -o $@ $(CFLAGS) rtbp_int.c opham_b.o rtbp.o flux_b.o rk45_b.o Newton_b.o QRsolve_b.o -lm
 
 clean :
