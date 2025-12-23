@@ -23,7 +23,6 @@ passos:text que mostra els passos intermitjos fins obtenir l'h.
 
 en retorna:
     0 si el pas s'acepta,
-    1 si no s'acepta el pas,
     -1 si falla memoria en guarda memoria,
     -2 no s'evalua ve el camp
     -3 Un dels calculs es NaN(Not a number)
