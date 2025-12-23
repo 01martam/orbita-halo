@@ -15,11 +15,11 @@ all : $(PROGS)
 QRsolve_b.o : QRsolve_b.c
 	gcc -c $(CFLAGS) $<
 
-PR1ex2 : PR1ex2.c QRsolve_b.o
+PR1ex2$(EXT) : PR1ex2.c QRsolve_b.o
 	gcc -o $@ $(CFLAGS) PR1ex2.c QRsolve_b.o -lm
-PR1ex3 : PR1ex3.c QRsolve_b.o
+PR1ex3$(EXT) : PR1ex3.c QRsolve_b.o
 	gcc -o $@ $(CFLAGS) PR1ex3.c QRsolve_b.o -lm
-PR1ex4 : PR1ex4.c QRsolve_b.o
+PR1ex4$(EXT) : PR1ex4.c QRsolve_b.o
 	gcc -o $@ $(CFLAGS) PR1ex4.c QRsolve_b.o -lm
 
 clean :
