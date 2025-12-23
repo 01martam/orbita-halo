@@ -2,7 +2,7 @@ CFLAGS=-g -Wall -fdiagnostics-color=always -Wno-misleading-indentation
 
 ifeq ($(OS),Windows_NT)
     RM = cmd /C del /Q
-    EXT = 
+    EXT = .exe
 else
     RM = rm -f
     EXT =
