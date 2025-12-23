@@ -1,3 +1,10 @@
+
+[guio_prac.pdf](https://github.com/user-attachments/files/24319002/guio_prac.pdf)
+
+[Entrega_Càlcul_númeric.pdf](https://github.com/user-attachments/files/24319004/Entrega_Calcul_numeric.pdf)
+
+Fotos obtenidas 
+
 # Practica 02
 <img width="640" height="468" alt="Fractal" src="https://github.com/user-attachments/assets/1342e077-dc18-4e69-ac94-10dd758bd580" />
 
