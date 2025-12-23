@@ -21,11 +21,11 @@ TestFunction.o : TestFunction.c
 Newton_b.o : Newton_b.c QRsolve_b.h
 	gcc -c $(CFLAGS) Newton_b.c
 
-PR2ex2 : PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o
+PR2ex2$(EXT) : PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o
 	gcc -o $@ $(CFLAGS) PR2ex2.c QRsolve_b.o Newton_b.o TestFunction.o -lm
 
 
-PR2ex3 : PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o
+PR2ex3$(EXT) : PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o
 	gcc -o $@ $(CFLAGS) PR2ex3.c QRsolve_b.o Newton_b.o TestFunction.o -lm
 clean :
 	$(RM) *.o
