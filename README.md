@@ -2,6 +2,7 @@
 [guio_prac.pdf](https://github.com/user-attachments/files/24319002/guio_prac.pdf)
 
 [Entrega_Càlcul_númeric.pdf](https://github.com/user-attachments/files/24319004/Entrega_Calcul_numeric.pdf)
+
 Nota:9,8/10
 > ERROR:Fas servir dues "normes" diferents durant la pràctica. Per Newton i QR fas servir la norma 2, però en canvi a RK fas servir la norma 1 (o la infinit, ara no me'n recordo). Això fa que canvií la topologia de l'espai mètric on treballes i que hi hagi alguna incongruència petita. És subtil, però sempre cal treballar amb la mateixa norma (tot i que totes siguin equivalents) per tal que la tolerància sigui uniforme per totes.
 
