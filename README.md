@@ -1,12 +1,13 @@
 # Òrbites Halo
-[guio_prac.pdf](https://github.com/user-attachments/files/24319002/guio_prac.pdf)
+[guio_prac.pdf](https://github.com/user-attachments/files/24319002/guio_prac.pdf) 
 
 [Manual de l'Entrega_Càlcul_númeric.pdf](https://github.com/user-attachments/files/24319004/Entrega_Calcul_numeric.pdf)
 
 Nota:9,8/10
-> ERROR:Fas servir dues "normes" diferents durant la pràctica. Per Newton i QR fas servir la norma 2, però en canvi a RK fas servir la norma 1 (o la infinit, ara no me'n recordo). Això fa que canvií la topologia de l'espai mètric on treballes i que hi hagi alguna incongruència petita. És subtil, però sempre cal treballar amb la mateixa norma (tot i que totes siguin equivalents) per tal que la tolerància sigui uniforme per totes.
+> ERROR:Fas servir dues "normes" diferents durant la pràctica. Per Newton i QR fas servir la norma 2, però en canvi a RK fas servir la norma 1 (o la infinit, ara no me'n recordo). Això fa que canvií la topologia de l'espai mètric on treballes i que hi hagi alguna incongruència petita. És subtil, però sempre cal treballar amb la mateixa norma (tot i que totes siguin equivalents) per tal que la tolerància sigui uniforme per totes.TO-##To DO
+- [ ] Canviar la norma utilitzada en RK a la norma 2.
 
-Fotos obtingudes
+Fotos obtingudes durant la pràctica
 
 ## Practica 01: Mètode QR per sistemes sobre determinats
 
